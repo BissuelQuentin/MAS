@@ -1,27 +1,22 @@
+import ficWriter
 
 ctrtab = []
 vartab = []
 domtab = []
-
-with open("../CELAR/scen01/ctr.txt", "r") as f:
+nomscen = "scen01"
+with open('../CELAR/'+ nomscen+ '/ctr.txt', "r") as f:
     for line in f.readlines():
         # Traiter la ligne et ainsi de suite ...
         ctrtab.append(line.split())
 
-print(ctrtab)
-
-with open("../CELAR/scen01/var.txt", "r") as f:
+with open('../CELAR/'+ nomscen +'/var.txt', "r") as f:
     for line in f.readlines():
         # Traiter la ligne et ainsi de suite ...
         vartab.append(line.split())
 
-print(vartab)
-
-with open("../CELAR/scen01/dom.txt", "r") as f:
+with open('../CELAR/'+ nomscen +'/dom.txt', "r") as f:
     for line in f.readlines():
         # Traiter la ligne et ainsi de suite ...
         domtab.append(line.split())
 
-print(domtab)
-
-ficWriter.createFile(1, vartab, ctrtab, domtab)
+ficWriter.createFile(nomscen, vartab, ctrtab, domtab)
