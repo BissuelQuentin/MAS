@@ -1,6 +1,6 @@
 
 def createFile(nomscen, vartab, ctrtab, domtab):
-    file = open(nomscen + ".xml", "w")
+    file = open("../out/" + nomscen + ".xml", "w")
 
 
     file.write('<instance>\n')
