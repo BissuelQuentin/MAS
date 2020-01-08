@@ -1,0 +1,5 @@
+DSA scen02 : A solution in 36 966 ms
+MGM scen02 : A solution in 55 204 ms
+AFB scen02 : A solution in 345 ms
+
+The others timed out 
