@@ -24,7 +24,7 @@ def createFile(nomscen, vartab, ctrtab, domtab):
 
     file.write('    <variables nbVariables="'+ str(len(vartab)) +'">\n')
     for i in range(len(vartab)) :
-        file.write('        <variable name="'+ str(i+1) + '" domain="'+ str(vartab[i][1]) + '" agent="agent'+ str(i+1) +'" />\n')
+        file.write('        <variable name="'+ str(vartab[i][0]) + '" domain="'+ str(vartab[i][1]) + '" agent="agent'+ str(i+1) +'" />\n')
     file.write('    </variables>\n\n')
 
     file.write('    <predicates nbPredicates="2">\n')
